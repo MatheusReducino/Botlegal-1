@@ -11,4 +11,12 @@ async def on_ready():
 @bot.command()
 async def ping(ctx):
     await ctx.reply(f"pong, haha ganhei")
+
+@bot.command()
+async def somalegal(ctx, num1, num2):
+    numb1 = int(num1)
+    numb2 = int(num2)
+    soma = numb1 + numb2
+    autor = ctx.author.name
+    await ctx.reply(f"oie {autor}, a soma disso ai é {soma}")
 bot.run("Token do teu bot")
