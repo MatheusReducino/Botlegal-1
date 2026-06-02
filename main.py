@@ -25,4 +25,9 @@ async def pfp(ctx):
     pfp = ctx.author.display_avatar.url
     await ctx.reply(f"a foto do bobao ai hahaha {pfp}")
 
+@bot.command()
+async def invadecasabranca(ctx):
+    casabranca = "https://lexlegal.com.br/wp-content/uploads/2025/08/trump-4.jpg"
+    await ctx.send(f"Invadimos, mas o trump malvado pegou a gente {casabranca}")
+
 bot.run("Token do teu bot")
