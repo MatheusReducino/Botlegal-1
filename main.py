@@ -30,4 +30,11 @@ async def invadecasabranca(ctx):
     casabranca = "https://lexlegal.com.br/wp-content/uploads/2025/08/trump-4.jpg"
     await ctx.send(f"Invadimos, mas o trump malvado pegou a gente {casabranca}")
 
+@bot.command()
+async def msgrepetida(ctx, texto, num):
+    numero = int(num)
+    textomsg = texto
+    for a in range(numero):
+        await ctx.send(textomsg)
+
 bot.run("Token do teu bot")
